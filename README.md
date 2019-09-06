@@ -17,6 +17,8 @@ Create txt file with IP address you want as line by line.
 ```
 #ip 1
 #ip 2
+#
+#....any number of ip's.
 
 ```
 Create new script using below code.
