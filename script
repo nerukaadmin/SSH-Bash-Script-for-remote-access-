@@ -1,0 +1,17 @@
+#!/bin/sh
+apt-get install sshpass -y #will install sshpass for your ubuntu
+while read line; do
+
+  ip="$(grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' <<< "$line")"
+ping -c1 $ip  #will ping every ip once and cehck whether they are in online
+if [ $? -eq 1 ] #will cechk return value 1=offline and 0=online
+then
+echo "****************Host Offline*********************"
+else
+#ssh command
+  sshpass -p "YOUR PASSWORD" ssh -o StrictHostKeyChecking=no root@$ip pwd < /dev/null
+fi
+
+done < "your path for txt" #add path with ip address saved in txt without .txt extension
+
+  
