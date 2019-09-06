@@ -30,7 +30,7 @@ Create new script using below code.
 
 ```
 #!/bin/sh
-apt-get install sshpass -y #will install sshpass for your ubuntu
+
 while read line; do
 
 ip="$(grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' <<< "$line")"
