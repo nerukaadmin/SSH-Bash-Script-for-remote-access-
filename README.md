@@ -13,7 +13,12 @@ sudo apt-get install sshpass
 
 ### Run script.
 
-Create txt file with IP address you want.
+Create txt file with IP address you want as line by line.
+```
+#ip 1
+#ip 2
+
+```
 Create new script using below code.
 
 
