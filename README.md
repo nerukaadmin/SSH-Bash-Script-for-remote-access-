@@ -36,7 +36,7 @@ done < "your path for txt" #add path with ip address saved in txt without .txt e
 ```
 
 
-And run it with root privilage by following command.
+And run it with root privilage in terminal by following command.
 
 ```
 bash -x "your script path"
